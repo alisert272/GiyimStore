@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - Ana Sayfa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" id="urunAraInput" placeholder="Ürün ara...">
+            <button id="urunAraBtn">Ara</button>
+        </div>
+
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+
+        </div>
+    </header>
+    
+    <!-- ANA MENÜ (KATEGORİLER) -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+
+    <!-- BANNER / ÖN PLAN ALANI -->
+   <section class="banner" id="banner">
+        <div class="banner-icerik">
+            <h1>Yeni Sezon Kadın, Erkek ve Çocuk Giyim</h1>
+            <p>Sezonun en trend ürünleri, uygun fiyatlarla.</p>
+            <a href="#one-cikanlar" class="btn">Alışverişe Başla</a>
+        </div>
+    </section>
+
+    <!-- ÖNE ÇIKAN ÜRÜNLER -->
+    <section class="one-cikanlar"id="one-cikanlar">
+        <h2>Öne Çıkan Ürünler</h2>
+        <div class="urun-grid">
+
+            <!-- KADIN ÜRÜNLERİ -->
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="kadın-elbise"
+                data-ad="Kadın Elbise"
+                data-fiyat="499"
+                data-resim="img/kadin3.jpg"
+                >🤍</span>
+
+                <img src="img/kadin3.jpg" alt="Kadın Elbise" class="urun-resim">
+                <h3>Kadın Elbise</h3>
+                <p class="fiyat">499 TL</p>
+
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                 <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Kadın Elbise"
+                    data-fiyat="499"
+                    data-aciklama="Şık ve rahat kesim kadın elbise."
+                    data-resim="img/kadin3.jpg">
+                    İncele
+                </button>
+ 
+                <button 
+                class="btn-kucuk sepete-ekle"
+                data-ad="Kadın Elbise"
+                data-fiyat="499"
+                data-resim="img/kadin3.jpg">
+                Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="kadın-bluz"
+                data-ad="Kadın Bluz"
+                data-fiyat="299"
+                data-resim="img/kadin1.jpg"
+                >🤍</span>
+                <img src="img/kadin1.jpg" alt="Kadın Bluz" class="urun-resim">
+                <h3>Kadın Bluz</h3>
+                <p class="fiyat">299 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Kadın Bluz"
+                    data-fiyat="499"
+                    data-aciklama="Şık ve modern tasarımıyla günlük ve ofis kombinlerine uyum sağlar. Hafif kumaşı sayesinde gün boyu rahat kullanım sunar."
+                    data-resim="img/kadin1.jpg">
+                    İncele
+                </button>
+
+                <button 
+                class="btn-kucuk sepete-ekle"
+                data-ad="Kadın Bluz"
+                data-fiyat="299"
+                data-resim="img/kadin1.jpg">
+                Sepete Ekle
+                </button>
+            </div>
+
+                        <!-- KADIN ÜRÜNLERİ -->
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="kadın-mont"
+                data-ad="Kadın Mont"
+                data-fiyat="799"
+                data-resim="img/kadin2.jpg"
+                >🤍</span>
+                <img src="img/kadin2.jpg" alt="Kadın Mont" class="urun-resim">
+                <h3>Kadın Mont</h3>
+                <p class="fiyat">799 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Kadın Mont"
+                    data-fiyat="799"
+                    data-resim="img/kadin2.jpg"
+                    data-aciklama="Soğuk havalar için ideal, şık ve sıcak tutan kadın mont. Günlük ve özel kombinler için uygundur.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Kadın Mont"
+                    data-fiyat="799"
+                    data-resim="img/kadin2.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <!-- ERKEK ÜRÜNLERİ -->
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="erkek-tisort"
+                data-ad="Erkek Tişört"
+                data-fiyat="249"
+                data-resim="img/erkek1.jpg"
+                >🤍</span>
+                <img src="img/erkek1.jpg" alt="Erkek Tişört" class="urun-resim">
+                <h3>Erkek Tişört</h3>
+                <p class="fiyat">249 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Erkek Tişört"
+                    data-fiyat="249"
+                    data-resim="img/erkek1.jpg"
+                    data-aciklama="Yumuşak kumaşı ve rahat kesimiyle günlük kullanıma uygun erkek tişört.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Tişört"
+                    data-fiyat="249"
+                    data-resim="img/erkek1.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="erkek-sweatshirt"
+                data-ad="Erkek Sweatshirt"
+                data-fiyat="349"
+                data-resim="img/erkek2.jpg"
+                >🤍</span>
+                <img src="img/erkek2.jpg" alt="Erkek Sweatshirt" class="urun-resim">
+                <h3>Erkek Sweatshirt</h3>
+                <p class="fiyat">349 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Erkek Sweatshirt"
+                    data-fiyat="349"
+                    data-resim="img/erkek2.jpg"
+                    data-aciklama="Serin havalar için tasarlanmış, konforlu ve modern erkek sweatshirt.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Sweatshirt"
+                    data-fiyat="349"
+                    data-resim="img/erkek2.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="erkek-dericeket"
+                data-ad="Erkek Deri Ceket"
+                data-fiyat="899"
+                data-resim="img/erkek23.jpg"
+                >🤍</span>
+                <img src="img/erkek23.jpg" alt="Erkek Deri Ceket" class="urun-resim">
+                <h3>Erkek Deri Ceket</h3>
+                <p class="fiyat">899 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Erkek Deri Ceket"
+                    data-fiyat="899"
+                    data-resim="img/erkek23.jpg"
+                    data-aciklama="Klasik ve zamansız tasarıma sahip erkek deri ceket. Dayanıklı ve şık.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Deri Ceket"
+                    data-fiyat="899"
+                    data-resim="img/erkek23.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <!-- ÇOCUK ÜRÜNLERİ -->
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="cocuk-sweatshirt"
+                data-ad="Çocuk Sweatshirt"
+                data-fiyat="199"
+                data-resim="img/cocuk27.jpg"
+                >🤍</span>
+                <img src="img/cocuk27.jpg" alt="Çocuk Sweatshirt" class="urun-resim">
+                <h3>Çocuk Sweatshirt</h3>
+                <p class="fiyat">199 TL</p>
+                <select class="beden-sec">
+                    <option value="">Beden Seç</option>
+                    <option value="92">2-3 Yaş </option>
+                    <option value="98">3-4 Yaş </option>
+                    <option value="110">5-6 Yaş </option>
+                    <option value="122">7-8 Yaş </option>
+                    <option value="134">9-10 Yaş </option>
+                    <option value="146">11-12 Yaş </option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Çocuk Sweatshirt"
+                    data-fiyat="199"
+                    data-resim="img/cocuk27.jpg"
+                    data-aciklama="Çocuklar için yumuşak, rahat ve sıcak tutan sweatshirt.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Çocuk Sweatshirt"
+                    data-fiyat="199"
+                    data-resim="img/cocuk27.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="cocuk-mont"
+                data-ad="Çocuk Mont"
+                data-fiyat="399"
+                data-resim="img/cocuk28.jpg"
+                >🤍</span>
+                <img src="img/cocuk28.jpg" alt="Çocuk Mont" class="urun-resim">
+                <h3>Çocuk Mont</h3>
+                <p class="fiyat">399 TL</p>
+                <select class="beden-sec">
+                    <option value="">Beden Seç</option>
+                    <option value="92">2-3 Yaş </option>
+                    <option value="98">3-4 Yaş </option>
+                    <option value="110">5-6 Yaş </option>
+                    <option value="122">7-8 Yaş </option>
+                    <option value="134">9-10 Yaş </option>
+                    <option value="146">11-12 Yaş </option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Çocuk Mont"
+                    data-fiyat="399"
+                    data-resim="img/cocuk28.jpg"
+                    data-aciklama="Soğuk havalar için hafif ve sıcak tutan çocuk montu.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Çocuk Mont"
+                    data-fiyat="399"
+                    data-resim="img/cocuk28.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="cocuk-pantolon"
+                data-ad="Çocuk Pantolon"
+                data-fiyat="249"
+                data-resim="img/cocuk29.jpg"
+                >🤍</span>
+                <img src="img/cocuk29.jpg" alt="Çocuk Pantolon" class="urun-resim">
+                <h3>Çocuk Pantolon</h3>
+                <p class="fiyat">249 TL</p>
+                <select class="beden-sec">
+                    <option value="">Beden Seç</option>
+                    <option value="92">2-3 Yaş </option>
+                    <option value="98">3-4 Yaş </option>
+                    <option value="110">5-6 Yaş </option>
+                    <option value="122">7-8 Yaş </option>
+                    <option value="134">9-10 Yaş </option>
+                    <option value="146">11-12 Yaş </option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Çocuk Pantolon"
+                    data-fiyat="249"
+                    data-resim="img/cocuk29.jpg"
+                    data-aciklama="Rahat kesimli, dayanıklı ve günlük kullanıma uygun çocuk pantolonu.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Çocuk Pantolon"
+                    data-fiyat="249"
+                    data-resim="img/cocuk29.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <!-- AKSESUARLAR -->
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="aksesuar-kolsaati"
+                data-ad="Kol Saati"
+                data-fiyat="299"
+                data-resim="img/erkek11.jpg"
+                >🤍</span>
+                <img src="img/erkek11.jpg" alt="Kol Saati" class="urun-resim">
+                <h3>Kol Saati</h3>
+                <p class="fiyat">299 TL</p>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Kol Saati"
+                    data-fiyat="299"
+                    data-resim="img/erkek11.jpg"
+                    data-aciklama="Modern tasarımlı, şık ve kullanışlı kol saati.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Kol Saati"
+                    data-fiyat="299"
+                    data-resim="img/erkek11.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="aksesuar-omuzcantasi"
+                data-ad="Omuz Çantası"
+                data-fiyat="199"
+                data-resim="img/canta1.jpg"
+                >🤍</span>
+                <img src="img/canta1.jpg" alt="Omuz Çantası" class="urun-resim">
+                <h3>Omuz Çantası</h3>
+                <p class="fiyat">199 TL</p>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Omuz Çantası"
+                    data-fiyat="199"
+                    data-resim="img/canta1.jpg"
+                    data-aciklama="Günlük kullanım için hafif, şık ve kullanışlı omuz çantası.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Omuz Çantası"
+                    data-fiyat="199"
+                    data-resim="img/canta1.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart">
+                <span
+                class="favori-btn"
+                data-id="akseuar-gunesgozlugu"
+                data-ad="Güneş Gözlüğü"
+                data-fiyat="149"
+                data-resim="img/gozluk1.jpg"
+                >🤍</span>
+                <img src="img/gozluk1.jpg" alt="Güneş Gözlüğü" class="urun-resim">
+                <h3>Güneş Gözlüğü</h3>
+                <p class="fiyat">149 TL</p>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Güneş Gözlüğü"
+                    data-fiyat="149"
+                    data-resim="img/gozluk1.jpg"
+                    data-aciklama="UV korumalı, hafif ve şık güneş gözlüğü.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Güneş Gözlüğü"
+                    data-fiyat="149"
+                    data-resim="img/gozluk1.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ALT KISIM / FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+<script src="js/script.js"></script>
+<div id="resimModal" class="modal">
+    <span class="modal-kapat">&times;</span>
+    <img id="modalImg">
+</div>
+
+    <!-- ÜRÜN DETAY MODAL  -->
+<div id="urunModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+    <span id="modalKapat" class="modal-kapat">&times;</span>
+
+    <img id="modalResim" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:12px;">
+    <h2 id="modalBaslik"></h2>
+    <p id="modalAciklama" style="color:#444; margin-top:8px;"></p>
+    <!-- fiyat göstermek istemezsen altındaki satırı sil; ister göster, ister gösterme -->
+    <p id="modalFiyat" class="modal-fiyat" style="margin-top:8px; color:#ff6a00;"></p>
+  </div>
+</div>
+
+
+</body>
+</html>
+

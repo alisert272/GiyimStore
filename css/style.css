@@ -1,0 +1,935 @@
+/* GENEL AYARLAR */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+}
+
+/* En Üst Kısım */
+.ust-bar {
+    display: flex;
+    justify-content: space-between;   /*arayı acar*/
+    align-items: center;
+    background: #111;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.arama-kutu {
+    display: flex;
+    gap: 5px;
+}
+
+.arama-kutu input {
+    padding: 6px 10px;
+    border-radius: 4px;     /*kose yuvarlatma*/
+    border: none;
+    width: 250px;
+}
+
+.arama-kutu button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #ff6b00;
+    color: #fff;
+    cursor: pointer; /* el imleci*/
+}
+
+.header-sag .link,
+.header-sag .sepet-icon {
+    color: #fff;
+    text-decoration: none;  /*baglantı ise alt cizgiyi kaldırır*/
+    margin-left: 15px; /*aralarındaki bosluk*/
+    font-size: 14px;
+}
+
+/* ANA MENÜ */
+/* ANA MENÜ (KATEGORİ ÇUBUĞU) */
+.ana-menu {
+    background: #222;
+    padding: 12px 40px;
+    display: flex;
+    align-items: center;
+    gap: 25px;          /* linkler arası mesafe*/
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Linkler */
+.ana-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    padding: 6px 2px;
+    transition: color 0.2s ease;  /* imlec geldiginde renk degisme*/
+}
+
+/* Hover’da alt çizgi efekti */
+.ana-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #ff6a00;
+    transition: width 0.25s ease;
+}
+
+.ana-menu a:hover {
+    color: #ffb347;
+}
+
+.ana-menu a:hover::after {
+    width: 100%;
+}
+
+/* Aktif sayfa (isteğe bağlı) */
+.ana-menu a.aktif {
+    color: #ffb347;
+}
+
+.ana-menu a.aktif::after {
+    width: 100%;
+}
+
+
+/* BANNER */
+.banner {
+    position: relative;
+    height: 360px;  /* biraz küçülttüm, foto çok büyütülmesin */
+    background-image: url('../img/hero.png');
+    background-size: cover;  /* gorsel alanı tamamen kaplar */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    color: #fff;
+}
+.banner {
+    transition: background-image 1s ease-in-out;
+}
+
+
+/* Hafif, çok koyu olmayan bir gölge (yazılar net görünsün diye) */
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.12);  /* %12 karartma, çok hafif */
+}
+
+/* Yazıların gölgenin üstünde kalması için */
+.banner-icerik {
+    position: relative;
+    z-index: 1;
+}
+
+
+.banner-icerik h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner-icerik p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 420px;
+}
+
+/* alısverise basla butonunu ozellestirir*/
+.banner .btn {
+    background: #ff6a00;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.banner .btn:hover {
+    background: #d45c00;
+    transform: translateY(-2px);
+}
+
+
+/* ÖNE ÇIKAN ÜRÜNLER */
+.one-cikanlar {
+    padding: 30px;
+}
+
+.one-cikanlar h2 {
+    margin-bottom: 20px;
+}
+/*urun dizilimi*/
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 24px;
+
+    max-width: 1200px;   /* ÖNEMLİ */
+    margin: 0 auto;      /* ORTALAR */
+}
+
+
+.urun-kart {
+    background: #fff;
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.urun-kart img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /*gorselın en boy oranını korur ve tum alanı kaplar*/
+    border-radius: 8px;
+}
+
+.fiyat {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-kucuk {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.alt-bar {
+    margin-top: 40px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.alt-bar a {
+    color: #ffb347;
+    text-decoration: none;
+}
+
+.sosyal span {
+    margin: 0 5px;
+}
+/*Kategori butonlarını güzelleştirme*/
+
+.alt-kategoriler {
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+.alt-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 5px;
+    background: #ff6a00;
+    color: #fff !important;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.alt-btn:hover {
+    background: #d45c00;
+    transform: translateY(-3px);
+}
+/*Başlıkları profesyonel hale getirme*/
+.kategori-baslik h1 {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px; /* baslıgın altına bosluk ekler*/
+}
+
+.kategori-baslik p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*Ürün kartlarını profesyonel hale getirme*/
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.urun-kart {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 13px rgba(0,0,0,0.12);
+    padding-bottom: 15px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+/*animasyon*/
+.urun-kart:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+/*Ürün görsellerini yuvarlama ve güzel görünüm*/
+.urun-kart img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.urun-kart {
+    position: relative;
+}
+
+/*Fiyatı Öne Çıkarma*/
+.fiyat {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff6a00;
+    margin: 8px 0;
+}
+/*İncele butonunu güzelleştirme*/
+.btn-kucuk {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn-kucuk:hover {
+    background: #222;
+    transform: translateY(-3px);
+}
+
+
+/*zoom efekti*/
+.urun-kart img {
+    transition: .3s;
+}
+
+.urun-kart:hover img {
+    transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #ffffff 0, #f7f7f7 45%, #eeeeee 100%);
+}
+
+
+/* GİRİŞ SAYFASI */
+.giris-sayfa {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* ortadan biraz yukarı */
+    padding: 60px 20px 40px;
+}
+
+
+.giris-kutu {
+    width: 420px;                     
+    background: #ffffff;
+    padding: 28px 32px;
+    border-radius: 16px;
+    box-shadow: 0 16px 35px rgba(0,0,0,0.16);  
+    border-top: 4px solid #ff6a00;    /*uste turuncu bir çizgi ekler*/
+}
+
+
+.giris-kutu h2 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.giris-aciklama {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* her alan icin hizalama yaoapar*/
+.giris-form .form-grup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.giris-form label {
+    font-size: 14px;
+    color: #333;
+}
+/*inputları guzellestırı*/
+.giris-form input[type="text"],
+.giris-form input[type="password"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+/*Odaklanınca turuncu çerçeve ve yumuşak bir efekt geliyor*/
+.giris-form input[type="text"]:focus,
+.giris-form input[type="password"]:focus {
+    outline: none;
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 2px rgba(255,106,0,0.2);
+}
+
+.form-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.beni-hatirla input {
+    margin-right: 4px;
+}
+
+.sifre-unuttum {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+.sifre-unuttum:hover {
+    text-decoration: underline;
+}
+/*Giris Dugmesini duzeltme*/
+.giris-btn {
+    width: 100%;
+    padding: 10px 0;
+    background: #ff6a00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer; /*el simgesi*/
+    transition: 0.25s;
+}
+
+.giris-btn:hover {
+    background: #d45c00;  /*dugmenin hafifce yukarı yonlenmesini saglar*/
+    transform: translateY(-2px);
+}
+
+.kayit-link {
+    margin-top: 15px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.kayit-link a {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+.kayit-link a:hover {
+    text-decoration: underline; /*fare uzerine geldıgınde alta cızgi gelir*/
+}
+
+/* KAYIT FORMU – İKİ SÜTUN DÜZENİ */
+.form-iki-sutun {
+    display: flex;
+    gap: 12px;
+    
+}
+
+.form-iki-sutun .form-grup {
+    flex: 1 1 0;              /* İki kolon eşit paylaşılsın, kart dışına taşmasın */
+    min-width: 0;             /* Flex içinde taşmayı engelle */
+}
+
+/* Tüm inputlar için köşe yuvarlama */
+.giris-form input {
+    border: 1px solid #918f8f;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Tıklayınca turuncu çerçeve */
+.giris-form input:focus {
+    outline: none;
+    border: 1px solid #ff6a00;
+    box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.25);
+    
+}
+
+/* Select kutusu görünümü */
+.giris-form select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.giris-form select:focus {
+    outline: none;
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 2px rgba(255,106,0,0.2);
+}
+
+/* Uzun KVKK metni checkbox alanı için satır kaymasını engelleme */
+.form-alt .beni-hatirla {
+    font-size: 12px;
+    line-height: 1.4;
+}
+/*sayfanın altına yavas sekilde iner*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* İLETİŞİM SAYFASI */
+.iletisim-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.iletisim-kutu, .iletisim-bilgi {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 13px rgba(0,0,0,0.10);
+    flex: 1;
+}
+
+.iletisim-kutu h2,
+.iletisim-bilgi h2 {
+    margin-bottom: 15px;
+}
+
+.iletisim-form .form-grup {
+    margin-bottom: 15px;
+}
+
+.iletisim-form input,
+.iletisim-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.iletisim-form input:focus,
+.iletisim-form textarea:focus {
+    border-color: #ff6a00;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,106,0,0.2);
+}
+/* ================= FAVORİ ================= */
+.favori-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;            
+    transition: transform 0.2s ease;
+}
+
+.favori-btn:hover {
+    transform: scale(1.2);
+}
+
+.favori-btn.aktif {
+    color: red;
+}
+.favori-btn {
+    pointer-events: auto;
+}
+
+
+/* Responsive mobil görünüm */
+@media(max-width: 850px) {
+    .iletisim-container {
+        flex-direction: column;
+    }
+}
+.mesaj-bildirimi {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    display: none;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal-kapat {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.urun-resim {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/*  SEPET SAYFASI  */
+.sepet-sayfa {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.sepet-sayfa h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sepet-bos {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+}
+
+.sepet-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sepet-sayi {
+    background: #ff8300;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+
+.sepet-urun {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.sepet-urun img {
+    width: 80px;
+    border-radius: 6px;
+}
+
+.sepet-urun h4 {
+    flex: 1;
+    font-size: 16px;
+}
+
+.sepet-urun span {
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+.sil-btn {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sepet-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* MODAL ARKA PLAN */
+.urun-modal {
+    display: none;          /* BAŞLANGIÇTA KAPALI */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* MODAL İÇERİK */
+.urun-modal-icerik {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.urun-modal-icerik img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.modal-fiyat {
+    color: #ff6a00;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* KAPATMA BUTONU */
+.modal-kapat {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.beden-sec {
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.btn-satin-al {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+
+/*  SATIN AL MODAL  */
+
+#satinAlModal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Modal kutusu */
+#satinAlModal .modal-icerik {
+    background: #fff;
+    width: 420px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    position: relative;
+    animation: modalAc 0.25s ease;
+}
+
+/* Açılış animasyonu */
+@keyframes modalAc {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Başlık */
+#satinAlModal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Input & textarea genel */
+#satinAlModal input,
+#satinAlModal textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+#satinAlModal textarea {
+    resize: none;
+    height: 70px;
+}
+
+/* 🔥 AA/YY + CVV YAN YANA */
+.modal-row {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-row input {
+    flex: 1;
+}
+
+/* Ödemeyi tamamla butonu */
+#satinAlModal button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#satinAlModal button:hover {
+    background: #333;
+}
+
+/* Kapatma (X) */
+#modalKapatSatin {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #666;
+}
+
+#modalKapatSatin:hover {
+    color: #000;
+}
+
+/* SIRALAMA  */
+.sirala-panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.sirala-panel label {
+    font-weight: 500;
+}
+
+.sirala-panel select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+
+/*  DROPDOWN MENU  */
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 2px;
+    display: inline-block;
+}
+
+/* Açılır menü kutusu */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    min-width: 180px;
+    display: none;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    z-index: 999;
+}
+
+/* Açılır menü linkleri */
+.dropdown a {
+    padding: 10px 14px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown a:hover {
+    background: #ff6a00;
+}
+
+/* Hover olunca aç */
+.menu-item:hover .dropdown {
+    display: flex;
+}
+

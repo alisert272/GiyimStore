@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - İletişim</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" placeholder="Ürün ara...">
+            <button>Ara</button>
+        </div>
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <!-- SAYFA BAŞLIĞI -->
+    <section class="kategori-baslik">
+        <h1>İletişim</h1>
+        <p>Müşteri hizmetlerimiz size 7/24 yardımcı olmak için burada.</p>
+    </section>
+
+    <!-- İLETİŞİM FORMU & BİLGİLER -->
+    <section class="iletisim-container">
+
+        <div class="iletisim-kutu">
+            <h2>Bize Ulaşın</h2>
+            <div id="mesajKutusu" class="mesaj-bildirimi" style="display: none;">
+             Mesajınız başarıyla gönderildi! En kısa sürede dönüş yapacağız.
+            </div>
+            <form class="iletisim-form" id="iletisimForm">
+                <div class="form-grup">
+                    <label>Ad Soyad</label>
+                    <input type="text" id="adsoyad" placeholder="Adınızı yazın">
+                </div>
+
+                <div class="form-grup">
+                    <label>E-posta</label>
+                    <input type="email" id="emailIletisim" placeholder="ornek@mail.com">
+                </div>
+
+                <div class="form-grup">
+                    <label>Konu</label>
+                    <input type="text" id="konu" placeholder="Konu başlığı">
+                </div>
+
+                <div class="form-grup">
+                    <label>Mesajınız</label>
+                    <textarea id="mesaj" rows="4" placeholder="Mesajınızı buraya yazın..."></textarea>
+                </div>
+
+                <button type="submit" class="btn">Gönder</button>
+            </form>
+        </div>
+
+        <!-- SAĞ TARAFTA İLETİŞİM BİLGİLERİ -->
+        <div class="iletisim-bilgi">
+            <h2>İletişim Bilgileri</h2>
+
+            <p><strong>📍 Adres:</strong> Ankara, Türkiye</p>
+            <p><strong>📞 Telefon:</strong> 0 (555) 123 45 67</p>
+            <p><strong>📧 E-posta:</strong> destek@giyimstore.com</p>
+
+            <h3>Sosyal Medya</h3>
+            <p>📸 Instagram: @giyimstore</p>
+            <p>🐦 Twitter: @giyimstore</p>
+            <p>📘 Facebook: GiyimStore Resmi</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

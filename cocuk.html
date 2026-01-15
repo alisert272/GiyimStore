@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - Çocuk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ÜST MENÜ -->
+<header class="ust-bar">
+    <div class="logo">GiyimStore</div>
+
+    <div class="arama-kutu">
+        <input type="text" id="urunAraInput" placeholder="Ürün ara...">
+        <button id="urunAraBtn">Ara</button>
+    </div>
+
+    <div class="header-sag">
+        <a href="favoriler.html" class="link">Favorilerim💖</a>
+        <a href="kayit.html" class="link">Kaydol</a>
+        <a href="giris.html" class="link">Giriş</a>
+        <a href="sepet.html" class="sepet-icon">
+            🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+        </a>
+    </div>
+</header>
+
+<!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+<!-- BAŞLIK -->
+<section class="kategori-baslik">
+    <h1>Çocuk Giyim</h1>
+    <p>Kız ve erkek çocuklar için rahat, eğlenceli ve dayanıklı giyim ürünleri.</p>
+</section>
+
+<!-- ALT KATEGORİ BUTONLARI -->
+<div class="alt-kategoriler">
+    <a href="cocuk.html" class="alt-btn aktif">Tümü</a>
+    <a href="cocuk-kiz.html" class="alt-btn">Kız Çocuk</a>
+    <a href="cocuk-erkek.html" class="alt-btn">Erkek Çocuk</a>
+</div>
+
+<div class="sirala-panel">
+    <label for="siralaSelect">Sırala:</label>
+    <select id="siralaSelect">
+        <option value="">Varsayılan</option>
+        <option value="fiyat-asc">Fiyata Göre (Artan)</option>
+        <option value="fiyat-desc">Fiyata Göre (Azalan)</option>
+        <option value="ad-asc">İsme Göre (A–Z)</option>
+        <option value="ad-desc">İsme Göre (Z–A)</option>
+    </select>
+</div>
+
+<!-- TÜM ÇOCUK ÜRÜNLERİ -->
+<section class="one-cikanlar">
+<div class="urun-grid">
+
+    <!-- KIZ ÇOCUK -->
+    <div class="urun-kart">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizelbise"
+                data-ad="Kız Çocuk Elbise"
+                data-fiyat="349"
+                data-resim="img/cocuk1.jpg"
+        >🤍</span>
+        <img src="img/cocuk1.jpg" class="urun-resim">
+        <h3>Kız Çocuk Elbise</h3>
+        <p class="fiyat">349 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Elbise"
+            data-fiyat="349"
+            data-resim="img/cocuk1.jpg"
+            data-aciklama="Yumuşak kumaşı ve rahat kesimiyle günlük kullanım için ideal kız çocuk elbisesi.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Elbise"
+            data-fiyat="349"
+            data-resim="img/cocuk1.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizelbise1"
+                data-ad="Kız Çocuk Elbise"
+                data-fiyat="329"
+                data-resim="img/cocuk8.jpg"
+        >🤍</span>
+        <img src="img/cocuk8.jpg" class="urun-resim">
+        <h3>Kız Çocuk Elbise</h3>
+        <p class="fiyat">329 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Elbise"
+            data-fiyat="329"
+            data-resim="img/cocuk8.jpg"
+            data-aciklama="Şık tasarımıyla özel günler ve günlük kullanım için uygun kız çocuk elbisesi.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Elbise"
+            data-fiyat="329"
+            data-resim="img/cocuk8.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="179">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kiztishirt"
+                data-ad="Kız Çocuk Tişört"
+                data-fiyat="179"
+                data-resim="img/cocuk2.jpg"
+        >🤍</span>
+        <img src="img/cocuk2.jpg" class="urun-resim">
+        <h3>Kız Çocuk Tişört</h3>
+        <p class="fiyat">179 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Tişört"
+            data-fiyat="179"
+            data-resim="img/cocuk2.jpg"
+            data-aciklama="Pamuklu yapısıyla cildi tahriş etmeyen, rahat kız çocuk tişörtü.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Tişört"
+            data-fiyat="179"
+            data-resim="img/cocuk2.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart" data-fiyat="149">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kiztishirt1"
+                data-ad="Kız Çocuk Tişört"
+                data-fiyat="149"
+                data-resim="img/cocuk7.jpg"
+        >🤍</span>
+        <img src="img/cocuk7.jpg" class="urun-resim">
+        <h3>Kız Çocuk Tişört</h3>
+        <p class="fiyat">149 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Tişört"
+            data-fiyat="149"
+            data-resim="img/cocuk7.jpg"
+            data-aciklama="Pamuklu kumaşıyla gün boyu rahat kullanım sunan kız çocuk tişörtü.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Tişört"
+            data-fiyat="149"
+            data-resim="img/cocuk7.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart" data-fiyat="289">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizsweatshirt"
+                data-ad="Kız Çocuk Sweatshirt"
+                data-fiyat="289"
+                data-resim="img/cocuk3.jpg"
+        >🤍</span>
+        <img src="img/cocuk3.jpg" class="urun-resim">
+        <h3>Kız Çocuk Sweatshirt</h3>
+        <p class="fiyat">289 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Sweatshirt"
+            data-fiyat="289"
+            data-resim="img/cocuk3.jpg"
+            data-aciklama="Yumuşak dokulu, rahat kesimli kız çocuk sweatshirt.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Sweatshirt"
+            data-fiyat="289"
+            data-resim="img/cocuk3.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="159">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kiztayt"
+                data-ad="Kız Çocuk Tayt"
+                data-fiyat="159"
+                data-resim="img/cocuk4.jpg"
+        >🤍</span>
+        <img src="img/cocuk4.jpg" class="urun-resim">
+        <h3>Kız Çocuk Tayt</h3>
+        <p class="fiyat">159 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Tayt"
+            data-fiyat="159"
+            data-resim="img/cocuk4.jpg"
+            data-aciklama="Esnek yapısı sayesinde hareket özgürlüğü sağlayan kız çocuk taytı.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Tayt"
+            data-fiyat="159"
+            data-resim="img/cocuk4.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="199">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizetek"
+                data-ad="Kız Çocuk Etek"
+                data-fiyat="199"
+                data-resim="img/cocuk5.jpg"
+        >🤍</span>
+        <img src="img/cocuk5.jpg" class="urun-resim">
+        <h3>Kız Çocuk Etek</h3>
+        <p class="fiyat">199 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Etek"
+            data-fiyat="199"
+            data-resim="img/cocuk5.jpg"
+            data-aciklama="Günlük ve özel günler için uygun, rahat kız çocuk eteği.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Etek"
+            data-fiyat="199"
+            data-resim="img/cocuk5.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="549">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizmont"
+                data-ad="Kız Çocuk Mont"
+                data-fiyat="549"
+                data-resim="img/cocuk6.jpg"
+        >🤍</span>
+        <img src="img/cocuk6.jpg" class="urun-resim">
+        <h3>Kız Çocuk Mont</h3>
+        <p class="fiyat">549 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Mont"
+            data-fiyat="549"
+            data-resim="img/cocuk6.jpg"
+            data-aciklama="Soğuk havalarda sıcak tutan, hafif kız çocuk montu.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Mont"
+            data-fiyat="549"
+            data-resim="img/cocuk6.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart" data-fiyat="259">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizhirka"
+                data-ad="Kız Çocuk Hırka"
+                data-fiyat="259"
+                data-resim="img/cocuk9.jpg"
+        >🤍</span>
+        <img src="img/cocuk9.jpg" class="urun-resim">
+        <h3>Kız Çocuk Hırka</h3>
+        <p class="fiyat">259 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Hırka"
+            data-fiyat="259"
+            data-resim="img/cocuk9.jpg"
+            data-aciklama="Serin havalar için ideal, yumuşak dokulu kız çocuk hırkası.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Hırka"
+            data-fiyat="259"
+            data-resim="img/cocuk9.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="169">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizsort"
+                data-ad="Kız Çocuk Şort"
+                data-fiyat="169"
+                data-resim="img/cocuk10.jpg"
+        >🤍</span>
+        <img src="img/cocuk10.jpg" class="urun-resim">
+        <h3>Kız Çocuk Şort</h3>
+        <p class="fiyat">169 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Şort"
+            data-fiyat="169"
+            data-resim="img/cocuk10.jpg"
+            data-aciklama="Yaz ayları için hafif, rahat ve renkli kız çocuk şortu.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Şort"
+            data-fiyat="169"
+            data-resim="img/cocuk10.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="389">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizesofmanalti"
+                data-ad="Kız Çocuk Eşofman Altı"
+                data-fiyat="389"
+                data-resim="img/cocuk11.jpg"
+        >🤍</span>
+        <img src="img/cocuk11.jpg" class="urun-resim">
+        <h3>Kız Çocuk Eşofman Takımı</h3>
+        <p class="fiyat">389 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Eşofman Takımı"
+            data-fiyat="389"
+            data-resim="img/cocuk11.jpg"
+            data-aciklama="Günlük ve spor aktiviteleri için rahat kesimli kız çocuk eşofman takımı.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Eşofman Takımı"
+            data-fiyat="389"
+            data-resim="img/cocuk11.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="449">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizyagmurluk"
+                data-ad="Kız Çocuk Yağmurluk"
+                data-fiyat="449"
+                data-resim="img/cocuk12.jpg"
+        >🤍</span>
+        <img src="img/cocuk12.jpg" class="urun-resim">
+        <h3>Kız Çocuk Yağmurluk</h3>
+        <p class="fiyat">449 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Yağmurluk"
+            data-fiyat="449"
+            data-resim="img/cocuk12.jpg"
+            data-aciklama="Su geçirmez yapısıyla yağışlı havalarda maksimum koruma sağlar.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Yağmurluk"
+            data-fiyat="449"
+            data-resim="img/cocuk12.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="99">
+        <span
+                class="favori-btn"
+                data-id="cocuk-kizsapka"
+                data-ad="Kız Çocuk Şapka"
+                data-fiyat="99"
+                data-resim="img/cocuk13.jpg"
+        >🤍</span>
+        <img src="img/cocuk13.jpg" class="urun-resim">
+        <h3>Kız Çocuk Şapka</h3>
+        <p class="fiyat">99 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Kız Çocuk Şapka"
+            data-fiyat="99"
+            data-resim="img/cocuk13.jpg"
+            data-aciklama="Güneşten koruyan hafif ve renkli kız çocuk şapkası.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Kız Çocuk Şapka"
+            data-fiyat="99"
+            data-resim="img/cocuk13.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <!-- ERKEK ÇOCUK -->
+    <div class="urun-kart" data-fiyat="299">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkeksweatshirt"
+                data-ad="Erkek Çocuk Sweatshirt"
+                data-fiyat="299"
+                data-resim="img/cocuk14.jpg"
+        >🤍</span>
+        <img src="img/cocuk14.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Sweatshirt</h3>
+        <p class="fiyat">299 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç </option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Sweatshirt"
+            data-fiyat="299"
+            data-resim="img/cocuk14.jpg"
+            data-aciklama="Serin havalarda sıcak tutan, esnek ve rahat erkek çocuk sweatshirt.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Sweatshirt"
+            data-fiyat="299"
+            data-resim="img/cocuk14.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="279">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekpantolon"
+                data-ad="Erkek Çocuk Sweatshirt"
+                data-fiyat="279"
+                data-resim="img/cocuk15.jpg"
+        >🤍</span>
+        <img src="img/cocuk15.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Pantolon</h3>
+        <p class="fiyat">279 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Pantolon"
+            data-fiyat="279"
+            data-resim="img/cocuk15.jpg"
+            data-aciklama="Hareket özgürlüğü sağlayan rahat kesimli erkek çocuk pantolonu.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Pantolon"
+            data-fiyat="279"
+            data-resim="img/cocuk15.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart" data-fiyat="169">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkektshirt"
+                data-ad="Erkek Çocuk Tişört"
+                data-fiyat="169"
+                data-resim="img/cocuk16.jpg"
+        >🤍</span>
+        <img src="img/cocuk16.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Tişört</h3>
+        <p class="fiyat">169 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Tişört"
+            data-fiyat="169"
+            data-resim="img/cocuk16.jpg"
+            data-aciklama="Pamuklu kumaşıyla rahat ve nefes alabilen erkek çocuk tişörtü.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Tişört"
+            data-fiyat="169"
+            data-resim="img/cocuk16.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="189">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkeksort"
+                data-ad="Erkek Çocuk Şort"
+                data-fiyat="189"
+                data-resim="img/cocuk17.jpg"
+        >🤍</span>
+        <img src="img/cocuk17.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Şort</h3>
+        <p class="fiyat">189 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Şort"
+            data-fiyat="189"
+            data-resim="img/cocuk17.jpg"
+            data-aciklama="Yaz ayları için ideal, hafif ve rahat erkek çocuk şortu.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Şort"
+            data-fiyat="189"
+            data-resim="img/cocuk17.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="259">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekesofmanalti"
+                data-ad="Erkek Çocuk Eşofman Altı"
+                data-fiyat="259"
+                data-resim="img/cocuk18.jpg"
+        >🤍</span>
+        <img src="img/cocuk18.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Eşofman Altı</h3>
+        <p class="fiyat">259 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Eşofman Altı"
+            data-fiyat="259"
+            data-resim="img/cocuk18.jpg"
+            data-aciklama="Günlük ve spor kullanım için uygun rahat eşofman altı.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Eşofman Altı"
+            data-fiyat="259"
+            data-resim="img/cocuk18.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="579">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekmont"
+                data-ad="Erkek Çocuk Mont"
+                data-fiyat="579"
+                data-resim="img/cocuk19.jpg"
+        >🤍</span>
+        <img src="img/cocuk19.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Mont</h3>
+        <p class="fiyat">579 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Mont"
+            data-fiyat="579"
+            data-resim="img/cocuk19.jpg"
+            data-aciklama="Kış aylarında maksimum koruma sağlayan erkek çocuk montu.">
+            İncele
+        </button>
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Mont"
+            data-fiyat="579"
+            data-resim="img/cocuk19.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+    <div class="urun-kart" data-fiyat="149">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkektshirt1"
+                data-ad="Erkek Çocuk Tişört"
+                data-fiyat="149"
+                data-resim="img/cocuk20.jpg"
+        >🤍</span>
+        <img src="img/cocuk20.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Tişört</h3>
+        <p class="fiyat">149 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Tişört"
+            data-fiyat="149"
+            data-resim="img/cocuk20.jpg"
+            data-aciklama="Pamuklu kumaşıyla rahat ve günlük kullanıma uygun erkek çocuk tişörtü.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Tişört"
+            data-fiyat="149"
+            data-resim="img/cocuk20.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="279">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkeksweatshirt1"
+                data-ad="Erkek Çocuk Sweatshirt"
+                data-fiyat="279"
+                data-resim="img/cocuk21.jpg"
+        >🤍</span>
+        <img src="img/cocuk21.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Sweatshirt</h3>
+        <p class="fiyat">279 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Sweatshirt"
+            data-fiyat="279"
+            data-resim="img/cocuk21.jpg"
+            data-aciklama="Serin havalarda sıcak tutan, yumuşak dokulu erkek çocuk sweatshirt.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Sweatshirt"
+            data-fiyat="279"
+            data-resim="img/cocuk21.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="219">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekesofmanalti1"
+                data-ad="Erkek Çocuk Eşofman Altı"
+                data-fiyat="219"
+                data-resim="img/cocuk22.jpg"
+        >🤍</span>
+        <img src="img/cocuk22.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Eşofman Altı</h3>
+        <p class="fiyat">219 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Eşofman Altı"
+            data-fiyat="219"
+            data-resim="img/cocuk22.jpg"
+            data-aciklama="Esnek yapısıyla spor ve günlük aktiviteler için ideal erkek çocuk eşofman altı.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Eşofman Altı"
+            data-fiyat="219"
+            data-resim="img/cocuk22.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="169">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkeksort1"
+                data-ad="Erkek Çocuk Şort"
+                data-fiyat="169"
+                data-resim="img/cocuk23.jpg"
+        >🤍</span>
+        <img src="img/cocuk23.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Şort</h3>
+        <p class="fiyat">169 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Şort"
+            data-fiyat="169"
+            data-resim="img/cocuk23.jpg"
+            data-aciklama="Yaz ayları için hafif ve nefes alabilen erkek çocuk şortu.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Şort"
+            data-fiyat="169"
+            data-resim="img/cocuk23.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="499">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekmont"
+                data-ad="Erkek Çocuk Mont"
+                data-fiyat="499"
+                data-resim="img/cocuk24.jpg"
+        >🤍</span>
+        <img src="img/cocuk24.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Mont</h3>
+        <p class="fiyat">499 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş</option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Mont"
+            data-fiyat="499"
+            data-resim="img/cocuk24.jpg"
+            data-aciklama="Soğuk havalar için sıcak tutan, dayanıklı erkek çocuk montu.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Mont"
+            data-fiyat="499"
+            data-resim="img/cocuk24.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="449">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkekyagmurluk"
+                data-ad="Erkek Çocuk Yağmurluk"
+                data-fiyat="449"
+                data-resim="img/cocuk25.jpg"
+        >🤍</span>
+        <img src="img/cocuk25.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Yağmurluk</h3>
+        <p class="fiyat">449 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Yağmurluk"
+            data-fiyat="449"
+            data-resim="img/cocuk25.jpg"
+            data-aciklama="Su geçirmez yapısıyla yağışlı havalarda koruma sağlayan erkek çocuk yağmurluk.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Yağmurluk"
+            data-fiyat="449"
+            data-resim="img/cocuk25.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+    <div class="urun-kart" data-fiyat="99">
+        <span
+                class="favori-btn"
+                data-id="cocuk-erkeksapka"
+                data-ad="Erkek Çocuk Şapka"
+                data-fiyat="99"
+                data-resim="img/cocuk26.jpg"
+        >🤍</span>
+        <img src="img/cocuk26.jpg" class="urun-resim">
+        <h3>Erkek Çocuk Şapka</h3>
+        <p class="fiyat">99 TL</p>
+        <select class="beden-sec">
+            <option value="">Beden Seç</option>
+            <option value="92">2-3 Yaş </option>
+            <option value="98">3-4 Yaş </option>
+            <option value="110">5-6 Yaş </option>
+            <option value="122">7-8 Yaş </option>
+            <option value="134">9-10 Yaş </option>
+            <option value="146">11-12 Yaş </option>
+        </select>
+
+
+        <button class="btn-kucuk incele-btn"
+            data-ad="Erkek Çocuk Şapka"
+            data-fiyat="99"
+            data-resim="img/cocuk26.jpg"
+            data-aciklama="Günlük kullanım için hafif ve rahat erkek çocuk şapkası.">
+            İncele
+        </button>
+
+        <button class="btn-kucuk sepete-ekle"
+            data-ad="Erkek Çocuk Şapka"
+            data-fiyat="99"
+            data-resim="img/cocuk26.jpg">
+            Sepete Ekle
+        </button>
+    </div>
+
+
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="alt-bar">
+    <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+    <div class="sosyal">
+        <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+    </div>
+    <p>© 2025 GiyimStore</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+<!-- ÜRÜN DETAY MODAL (incele için, sadece açıklama gösterir) -->
+<div id="urunModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+    <span id="modalKapat" class="modal-kapat">&times;</span>
+
+    <img id="modalResim" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:12px;">
+    <h2 id="modalBaslik"></h2>
+    <p id="modalAciklama" style="color:#444; margin-top:8px;"></p>
+    <!-- fiyat göstermek istemezsen altındaki satırı sil; ister göster, ister gösterme -->
+    <p id="modalFiyat" class="modal-fiyat" style="margin-top:8px; color:#ff6a00;"></p>
+  </div>
+</div>
+
+</body>
+</html>

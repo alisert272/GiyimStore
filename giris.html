@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - Giriş Yap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" placeholder="Ürün ara...">
+            <button>Ara</button>
+        </div>
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+   <!-- GİRİŞ FORMU -->
+<section class="giris-sayfa">
+    <div class="giris-kutu">
+        <h2>Giriş Yap</h2>
+        <p class="giris-aciklama">Hesabınıza giriş yaparak siparişlerinizi görüntüleyebilir ve hızlı alışveriş yapabilirsiniz.</p>
+
+        <!-- BURAYA id EKLEDİK -->
+        <form id="girisForm" class="giris-form">
+
+            <div class="form-grup">
+                <label for="email">E-posta veya Kullanıcı Adı</label>
+
+                <!-- id="kullanici" → id="email" OLDU -->
+                <input type="text" id="email" placeholder="ornek@mail.com">
+            </div>
+
+            <div class="form-grup">
+                <label for="sifre">Şifre</label>
+                <input type="password" id="sifre" placeholder="Şifrenizi girin">
+            </div>
+
+            <div class="form-alt">
+                <label class="beni-hatirla">
+                    <input type="checkbox" name="remember">
+                    Beni hatırla
+                </label>
+                <a href="#" class="sifre-unuttum">Şifremi unuttum</a>
+            </div>
+
+            <button type="submit" class="giris-btn">Giriş Yap</button>
+
+            <p class="kayit-link">
+                Henüz üye değil misiniz? 
+                <a href="kayit.html">Hemen kaydolun.</a>
+            </p>
+        </form>
+    </div>
+</section>
+
+
+    <!-- ALT KISIM / FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - Erkek Dış Giyim</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" id="urunAraInput" placeholder="Ürün ara...">
+            <button id="urunAraBtn">Ara</button>
+        </div>
+
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <!-- BAŞLIK -->
+    <section class="kategori-baslik">
+        <h1>Erkek Dış Giyim</h1>
+        <p>Mont, kaban, deri ceket ve daha fazlası</p>
+    </section>
+
+    <!-- ALT KATEGORİ BUTONLARI -->
+    <section class="alt-kategoriler">
+        <a href="erkek-ust.html" class="alt-btn">Üst Giyim</a>
+        <a href="erkek-alt.html" class="alt-btn">Alt Giyim</a>
+        <a href="erkek-dis.html" class="alt-btn">Dış Giyim</a>
+        <a href="erkek-aksesuar.html" class="alt-btn">Aksesuar</a>
+    </section>
+
+    <div class="sirala-panel">
+    <label for="siralaSelect">Sırala:</label>
+    <select id="siralaSelect">
+        <option value="">Varsayılan</option>
+        <option value="fiyat-asc">Fiyata Göre (Artan)</option>
+        <option value="fiyat-desc">Fiyata Göre (Azalan)</option>
+        <option value="ad-asc">İsme Göre (A–Z)</option>
+        <option value="ad-desc">İsme Göre (Z–A)</option>
+    </select>
+    </div>
+
+    <!-- DIŞ GİYİM ÜRÜNLERİ -->
+    <section class="urun-liste">
+        <div class="urun-grid">
+
+           <div class="urun-kart" data-fiyat="899">
+                <span
+                class="favori-btn"
+                data-id="erkek-mont"
+                data-ad="Erkek Mont"
+                data-fiyat="899"
+                data-resim="img/erkek7.jpg"
+                >🤍</span>
+                <img src="img/erkek7.jpg" alt="Erkek Mont" class="urun-resim">
+                <h3>Erkek Mont</h3>
+                <p class="fiyat">899 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Erkek Mont"
+                    data-fiyat="899"
+                    data-resim="img/erkek7.jpg"
+                    data-aciklama="Soğuk havalar için tasarlanmış, sıcak tutan ve rahat kesimli erkek mont.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Mont"
+                    data-fiyat="899"
+                    data-resim="img/erkek7.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="1199">
+                <span
+                class="favori-btn"
+                data-id="erkek-klaskkaban"
+                data-ad="Erkek Klasik Kaban"
+                data-fiyat="1199"
+                data-resim="img/erkek8.jpg"
+                >🤍</span>
+                <img src="img/erkek8.jpg" alt="Erkek Klasik Kaban" class="urun-resim">
+                <h3>Erkek Klasik Kaban</h3>
+                <p class="fiyat">1.199 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Erkek Klasik Kaban"
+                    data-fiyat="1199"
+                    data-resim="img/erkek8.jpg"
+                    data-aciklama="Şık ve klasik tasarımıyla iş ve özel günler için ideal erkek kaban.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Klasik Kaban"
+                    data-fiyat="1199"
+                    data-resim="img/erkek8.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="1499">
+                <span
+                class="favori-btn"
+                data-id="erkek-dericeket"
+                data-ad="Erkek Deri Ceket"
+                data-fiyat="1499"
+                data-resim="img/erkek23.jpg"
+                >🤍</span>
+                <img src="img/erkek23.jpg" alt="Deri Ceket" class="urun-resim">
+                <h3>Deri Ceket</h3>
+                <p class="fiyat">1.499 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Deri Ceket"
+                    data-fiyat="1499"
+                    data-resim="img/erkek23.jpg"
+                    data-aciklama="Gerçek deri görünümüyle zamansız ve maskülen stil sunan erkek ceket.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Deri Ceket"
+                    data-fiyat="1499"
+                    data-resim="img/erkek23.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="799">
+                <span
+                class="favori-btn"
+                data-id="erkek-sismont"
+                data-ad="Erkek Şişme Mont"
+                data-fiyat="799"
+                data-resim="img/erkek17.jpg"
+                >🤍</span>                
+                <img src="img/erkek17.jpg" alt="Şişme Mont" class="urun-resim">
+                <h3>Şişme Mont</h3>
+                <p class="fiyat">799 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Şişme Mont"
+                    data-fiyat="799"
+                    data-resim="img/erkek17.jpg"
+                    data-aciklama="Hafif yapısı ve yüksek ısı yalıtımıyla kış ayları için ideal şişme mont.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Şişme Mont"
+                    data-fiyat="799"
+                    data-resim="img/erkek17.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="499">
+                <span
+                class="favori-btn"
+                data-id="erkek-yagmurluk"
+                data-ad="Erkek Yağmurluk"
+                data-fiyat="499"
+                data-resim="img/erkek24.jpg"
+                >🤍</span>
+                <img src="img/erkek24.jpg" alt="Yağmurluk" class="urun-resim">
+                <h3>Yağmurluk</h3>
+                <p class="fiyat">499 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Yağmurluk"
+                    data-fiyat="499"
+                    data-resim="img/erkek24.jpg"
+                    data-aciklama="Su geçirmez yapısıyla yağışlı havalarda konfor sağlayan erkek yağmurluk.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Yağmurluk"
+                    data-fiyat="499"
+                    data-resim="img/erkek24.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="999">
+                <span
+                class="favori-btn"
+                data-id="erkek-parka"
+                data-ad="Erkek Parka"
+                data-fiyat="999"
+                data-resim="img/erkek25.jpg"
+                >🤍</span>
+                <img src="img/erkek25.jpg" alt="Parka" class="urun-resim">
+                <h3>Parka</h3>
+                <p class="fiyat">999 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Parka"
+                    data-fiyat="999"
+                    data-resim="img/erkek25.jpg"
+                    data-aciklama="Soğuk hava koşulları için tasarlanmış, kapüşonlu ve dayanıklı erkek parka.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Parka"
+                    data-fiyat="999"
+                    data-resim="img/erkek25.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+    </section>
+
+    <!-- ALT KISIM / FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+
+    <!-- JS Dosyası -->
+    <script src="js/script.js"></script>
+<div id="resimModal" class="modal">
+    <span class="modal-kapat">&times;</span>
+    <img id="modalImg">
+</div>
+<!-- ÜRÜN DETAY MODAL (incele için, sadece açıklama gösterir) -->
+<div id="urunModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+    <span id="modalKapat" class="modal-kapat">&times;</span>
+
+    <img id="modalResim" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:12px;">
+    <h2 id="modalBaslik"></h2>
+    <p id="modalAciklama" style="color:#444; margin-top:8px;"></p>
+    <!-- fiyat göstermek istemezsen altındaki satırı sil; ister göster, ister gösterme -->
+    <p id="modalFiyat" class="modal-fiyat" style="margin-top:8px; color:#ff6a00;"></p>
+  </div>
+</div>
+</body>
+</html>
+
+            

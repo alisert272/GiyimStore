@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kadın Dış Giyim - GiyimStore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" id="urunAraInput" placeholder="Ürün ara...">
+            <button id="urunAraBtn">Ara</button>
+        </div>
+
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <!-- SAYFA BAŞLIĞI -->
+    <section class="kategori-baslik">
+        <h1>Kadın Dış Giyim</h1>
+        <p>Kaban, mont, trençkot ve yağmurluk modelleri</p>
+    </section>
+
+    <!-- ALT KATEGORİ BUTONLARI -->
+    <section class="alt-kategoriler">
+        <a href="kadin-ust-giyim.html" class="alt-btn">Üst Giyim</a>
+        <a href="kadin-alt-giyim.html" class="alt-btn">Alt Giyim</a>
+        <a href="kadin-dis-giyim.html" class="alt-btn">Dış Giyim</a>
+        <a href="kadin-aksesuar.html" class="alt-btn">Aksesuarlar</a>
+    </section>
+
+    <div class="sirala-panel">
+    <label for="siralaSelect">Sırala:</label>
+    <select id="siralaSelect">
+        <option value="">Varsayılan</option>
+        <option value="fiyat-asc">Fiyata Göre (Artan)</option>
+        <option value="fiyat-desc">Fiyata Göre (Azalan)</option>
+        <option value="ad-asc">İsme Göre (A–Z)</option>
+        <option value="ad-desc">İsme Göre (Z–A)</option>
+    </select>
+    </div>
+
+    <!-- DIŞ GİYİM ÜRÜNLERİ -->
+    <section class="urun-liste">
+        <div class="urun-grid">
+
+            <div class="urun-kart" data-fiyat="899">
+                <span
+                class="favori-btn"
+                data-id="kadın-kaban"
+                data-ad="Kaban"
+                data-fiyat="899"
+                data-resim="img/kadin8.jpg"
+                >🤍</span>
+                <img src="img/kadin8.jpg" class="urun-resim">
+                <h3>Kaban</h3>
+                <p class="fiyat">899 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Kaban"
+                    data-fiyat="899"
+                    data-resim="img/kadin8.jpg"
+                    data-aciklama="Soğuk havalarda maksimum koruma sağlayan şık kaban.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Kaban"
+                    data-fiyat="899"
+                    data-resim="img/kadin8.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="799">
+                <span
+                class="favori-btn"
+                data-id="kadın-mont"
+                data-ad="Mont"
+                data-fiyat="799"
+                data-resim="img/kadin20.jpg"
+                >🤍</span>
+                <img src="img/kadin2.jpg" class="urun-resim">
+                <h3> Kadın Mont</h3>
+                <p class="fiyat">799 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Kadın Mont"
+                    data-fiyat="799"
+                    data-resim="img/kadin2.jpg"
+                    data-aciklama="Soğuk ve rüzgarlı havalar için ideal mont.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Kadın Mont"
+                    data-fiyat="799"
+                    data-resim="img/kadin2.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="749">
+                <span
+                class="favori-btn"
+                data-id="kadın-trendkoc"
+                data-ad="Kadın Trençkot"
+                data-fiyat="749"
+                data-resim="img/kadin9.jpg"
+                >🤍</span>
+                <img src="img/kadin9.jpg" class="urun-resim">
+                <h3> Kadın Trençkot</h3>
+                <p class="fiyat">749 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad=" Kadın Trençkot"
+                    data-fiyat="749"
+                    data-resim="img/kadin9.jpg"
+                    data-aciklama="Mevsim geçişleri için hafif ve şık trençkot.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad=" Kadın Trençkot"
+                    data-fiyat="749"
+                    data-resim="img/kadin9.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="499">
+                <span
+                class="favori-btn"
+                data-id="kadın-yagmurluk"
+                data-ad="Kadın Yağmurluk"
+                data-fiyat="499"
+                data-resim="img/kadin21.jpg"
+                >🤍</span>
+                <img src="img/kadin21.jpg" class="urun-resim">
+                <h3> Kadın Yağmurluk</h3>
+                <p class="fiyat">499 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad=" Kadın Yağmurluk"
+                    data-fiyat="499"
+                    data-resim="img/kadin21.jpg"
+                    data-aciklama="Yağışlı havalarda su geçirmez koruma sağlar.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad=" Kadın Yağmurluk"
+                    data-fiyat="499"
+                    data-resim="img/kadin21.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="899">
+                <span
+                class="favori-btn"
+                data-id="kadın-kaban1"
+                data-ad="Kaban"
+                data-fiyat="899"
+                data-resim="img/kadin22.jpg"
+                >🤍</span>
+                <img src="img/kadin22.jpg" class="urun-resim">
+                <h3>Kaban</h3>
+                <p class="fiyat">899 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button class="btn-kucuk incele-btn"
+                    data-ad="Kaban"
+                    data-fiyat="899"
+                    data-resim="img/kadin22.jpg"
+                    data-aciklama="Kış aylarında sıcak tutan kaliteli kaban.">
+                    İncele
+                </button>
+
+                <button class="btn-kucuk sepete-ekle"
+                    data-ad="Kaban"
+                    data-fiyat="899"
+                    data-resim="img/kadin22.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="749">
+                <span
+                class="favori-btn"
+                data-id="kadın-trendkoc1"
+                data-ad="Trençkot"
+                data-fiyat="1749"
+                data-resim="img/kadin24.jpg"
+                >🤍</span>
+            <img src="img/kadin24.jpg" class="urun-resim">
+            <h3>Trençkot</h3>
+            <p class="fiyat">749 TL</p>
+            <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+            <button class="btn-kucuk incele-btn"
+                data-ad="Trençkot"
+                data-fiyat="749"
+                data-resim="img/kadin24.jpg"
+                data-aciklama="Mevsim geçişleri için hafif, şık ve kullanışlı trençkot.">
+                İncele
+            </button>
+
+            <button class="btn-kucuk sepete-ekle"
+                data-ad="Trençkot"
+                data-fiyat="749"
+                data-resim="img/kadin24.jpg">
+                Sepete Ekle
+            </button>
+        </div>
+
+        <div class="urun-kart" data-fiyat="499">
+            <span
+                class="favori-btn"
+                data-id="kadın-yagmurluk"
+                data-ad="Yağmurluk"
+                data-fiyat="499"
+                data-resim="img/kadin25.jpg"
+            >🤍</span>
+            <img src="img/kadin25.jpg" class="urun-resim">
+            <h3>Yağmurluk</h3>
+            <p class="fiyat">499 TL</p>
+            <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+            <button class="btn-kucuk incele-btn"
+                data-ad="Yağmurluk"
+                data-fiyat="499"
+                data-resim="img/kadin25.jpg"
+                data-aciklama="Yağışlı havalarda su geçirmez koruma sağlayan yağmurluk.">
+                İncele
+            </button>
+
+            <button class="btn-kucuk sepete-ekle"
+                data-ad="Yağmurluk"
+                data-fiyat="499"
+                data-resim="img/kadin25.jpg">
+                Sepete Ekle
+            </button>
+        </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- ALT BAR -->
+    <footer class="alt-bar">
+        <p>İletişim: destek@giyimstore.com</p>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+<script src="js/script.js"></script>
+<div id="resimModal" class="modal">
+    <span class="modal-kapat">&times;</span>
+    <img id="modalImg">
+</div>
+<!-- ÜRÜN DETAY MODAL (incele için, sadece açıklama gösterir) -->
+<div id="urunModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+    <span id="modalKapat" class="modal-kapat">&times;</span>
+
+    <img id="modalResim" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:12px;">
+    <h2 id="modalBaslik"></h2>
+    <p id="modalAciklama" style="color:#444; margin-top:8px;"></p>
+    <!-- fiyat göstermek istemezsen altındaki satırı sil; ister göster, ister gösterme -->
+    <p id="modalFiyat" class="modal-fiyat" style="margin-top:8px; color:#ff6a00;"></p>
+  </div>
+</div>
+
+</body>
+</html>

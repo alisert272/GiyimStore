@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>GiyimStore - Erkek Alt Giyim</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="ust-bar">
+        <div class="logo">GiyimStore</div>
+
+        <div class="arama-kutu">
+            <input type="text" id="urunAraInput" placeholder="Ürün ara...">
+            <button id="urunAraBtn">Ara</button>
+        </div>
+
+
+        <div class="header-sag">
+            <a href="favoriler.html" class="link">Favorilerim💖</a>
+            <a href="kayit.html" class="link">Kaydol</a>
+            <a href="giris.html" class="link">Giriş</a>
+            <a href="sepet.html" class="sepet-icon">
+                🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ANA MENÜ -->
+    <nav class="ana-menu">
+        <a href="index.html">Ana Sayfa</a>
+
+        <div class="menu-item">
+            <a href="kadin.html">Kadın</a>
+            <div class="dropdown">
+                <a href="kadin-ust-giyim.html">Üst Giyim</a>
+                <a href="kadin-alt-giyim.html">Alt Giyim</a>
+                <a href="kadin-dis-giyim.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="erkek.html">Erkek</a>
+            <div class="dropdown">
+                <a href="erkek-ust.html">Üst Giyim</a>
+                <a href="erkek-alt.html">Alt Giyim</a>
+                <a href="erkek-dis.html">Dış Giyim</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <a href="cocuk.html">Çocuk</a>
+            <div class="dropdown">
+                <a href="cocuk-kiz.html">Kız Çocuk</a>
+                <a href="cocuk-erkek.html">Erkek Çocuk</a>
+            </div>
+        </div>
+
+        <a href="iletisim.html">İletişim</a>
+    </nav>
+
+    <!-- BAŞLIK -->
+    <section class="kategori-baslik">
+        <h1>Erkek Alt Giyim</h1>
+        <p>Kot pantolon, eşofman altı, kargo pantolon, şort ve daha fazlası</p>
+    </section>
+
+    <!-- ALT KATEGORİ BUTONLARI -->
+    <section class="alt-kategoriler">
+        <a href="erkek-ust.html" class="alt-btn">Üst Giyim</a>
+        <a href="erkek-alt.html" class="alt-btn">Alt Giyim</a>
+        <a href="erkek-dis.html" class="alt-btn">Dış Giyim</a>
+        <a href="erkek-aksesuar.html" class="alt-btn">Aksesuar</a>
+    </section>
+
+    <div class="sirala-panel">
+    <label for="siralaSelect">Sırala:</label>
+    <select id="siralaSelect">
+        <option value="">Varsayılan</option>
+        <option value="fiyat-asc">Fiyata Göre (Artan)</option>
+        <option value="fiyat-desc">Fiyata Göre (Azalan)</option>
+        <option value="ad-asc">İsme Göre (A–Z)</option>
+        <option value="ad-desc">İsme Göre (Z–A)</option>
+    </select>
+    </div>
+
+    <!-- ALT GİYİM ÜRÜNLERİ -->
+    <section class="urun-liste">
+        <div class="urun-grid">
+
+           <div class="urun-kart" data-fiyat="399">
+                <span
+                class="favori-btn"
+                data-id="erkek-kotpantolon"
+                data-ad="Erkek Kot Pantolon"
+                data-fiyat="399"
+                data-resim="img/erkek4.jpg"
+                >🤍</span>
+                <img src="img/erkek4.jpg" alt="Erkek Kot Pantolon" class="urun-resim">
+                <h3>Erkek Kot Pantolon</h3>
+                <p class="fiyat">399 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Erkek Kot Pantolon"
+                    data-fiyat="399"
+                    data-resim="img/erkek4.jpg"
+                    data-aciklama="Dayanıklı denim kumaşıyla günlük kullanım için ideal, klasik erkek kot pantolon.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Kot Pantolon"
+                    data-fiyat="399"
+                    data-resim="img/erkek4.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="279">
+                <span
+                class="favori-btn"
+                data-id="erkek-esofmanalti"
+                data-ad="Erkek Eşofman Altı"
+                data-fiyat="279"
+                data-resim="img/erkek5.jpg"
+                >🤍</span>
+                <img src="img/erkek5.jpg" alt="Erkek Eşofman Altı" class="urun-resim">
+                <h3>Erkek Eşofman Altı</h3>
+                <p class="fiyat">279 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Erkek Eşofman Altı"
+                    data-fiyat="279"
+                    data-resim="img/erkek5.jpg"
+                    data-aciklama="Rahat kesimi ve esnek yapısıyla spor ve günlük kullanım için uygundur.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Eşofman Altı"
+                    data-fiyat="279"
+                    data-resim="img/erkek5.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="349">
+                <span
+                class="favori-btn"
+                data-id="erkek-kargopantolon"
+                data-ad="Erkek Kargo Pantolon"
+                data-fiyat="349"
+                data-resim="img/erkek6.jpg"
+                >🤍</span>
+                <img src="img/erkek6.jpg" alt="Erkek Kargo Pantolon" class="urun-resim">
+                <h3>Erkek Kargo Pantolon</h3>
+                <p class="fiyat">349 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Erkek Kargo Pantolon"
+                    data-fiyat="349"
+                    data-resim="img/erkek6.jpg"
+                    data-aciklama="Fonksiyonel cepleriyle günlük ve outdoor kullanıma uygun erkek pantolon.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Erkek Kargo Pantolon"
+                    data-fiyat="349"
+                    data-resim="img/erkek6.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="459">
+                <span
+                class="favori-btn"
+                data-id="erkek-kumaspantolon"
+                data-ad="Erkek Kumaş Pantolon"
+                data-fiyat="459"
+                data-resim="img/erkek18.jpg"
+                >🤍</span>
+                <img src="img/erkek18.jpg" alt="Kumaş Pantolon" class="urun-resim">
+                <h3>Kumaş Pantolon</h3>
+                <p class="fiyat">459 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Kumaş Pantolon"
+                    data-fiyat="459"
+                    data-resim="img/erkek18.jpg"
+                    data-aciklama="Şık ve klasik tasarımıyla ofis ve özel günler için ideal kumaş pantolon.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Kumaş Pantolon"
+                    data-fiyat="459"
+                    data-resim="img/erkek18.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="199">
+                <span
+                class="favori-btn"
+                data-id="erkek-sort"
+                data-ad="Erkek Şort"
+                data-fiyat="199"
+                data-resim="img/erkek19.jpg"
+                >🤍</span>
+                <img src="img/erkek19.jpg" alt="Erkek Şort" class="urun-resim">
+                <h3>Şort</h3>
+                <p class="fiyat">199 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Şort"
+                    data-fiyat="199"
+                    data-resim="img/erkek19.jpg"
+                    data-aciklama="Yaz ayları için hafif ve rahat kesimli erkek şort.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Şort"
+                    data-fiyat="199"
+                    data-resim="img/erkek19.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="329">
+                <span
+                class="favori-btn"
+                data-id="erkek-jogger"
+                data-ad="Erkek Jogger Pantolon"
+                data-fiyat="329"
+                data-resim="img/erkek20.jpg"
+                >🤍</span>
+                <img src="img/erkek20.jpg" alt="Jogger Pantolon" class="urun-resim">
+                <h3>Jogger Pantolon</h3>
+                <p class="fiyat">329 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Jogger Pantolon"
+                    data-fiyat="329"
+                    data-resim="img/erkek20.jpg"
+                    data-aciklama="Modern jogger kesimiyle spor ve günlük kombinler için uygundur.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Jogger Pantolon"
+                    data-fiyat="329"
+                    data-resim="img/erkek20.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="429">
+                <span
+                class="favori-btn"
+                data-id="erkek-slimfit"
+                data-ad="Erkek Slim Fit Pantolon"
+                data-fiyat="429"
+                data-resim="img/erkek21.jpg"
+                >🤍</span>
+                <img src="img/erkek21.jpg" alt="Slim Fit Pantolon" class="urun-resim">
+                <h3>Slim Fit Pantolon</h3>
+                <p class="fiyat">429 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Slim Fit Pantolon"
+                    data-fiyat="429"
+                    data-resim="img/erkek21.jpg"
+                    data-aciklama="Vücuda oturan slim fit kesimiyle şık ve modern bir görünüm sunar.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Slim Fit Pantolon"
+                    data-fiyat="429"
+                    data-resim="img/erkek21.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+            <div class="urun-kart" data-fiyat="249">
+                <span
+                class="favori-btn"
+                data-id="erkek-ketensort"
+                data-ad="Erkek Keten Şort"
+                data-fiyat="249"
+                data-resim="img/erkek22.jpg"
+                >🤍</span>                
+                <img src="img/erkek22.jpg" alt="Keten Şort" class="urun-resim">
+                <h3>Keten Şort</h3>
+                <p class="fiyat">249 TL</p>
+                <select class="beden-sec">
+                <option value="">Beden Seç</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+
+                <button
+                    class="btn-kucuk incele-btn"
+                    data-ad="Keten Şort"
+                    data-fiyat="249"
+                    data-resim="img/erkek22.jpg"
+                    data-aciklama="Nefes alabilen keten kumaşıyla yaz aylarında maksimum konfor sağlar.">
+                    İncele
+                </button>
+
+                <button
+                    class="btn-kucuk sepete-ekle"
+                    data-ad="Keten Şort"
+                    data-fiyat="249"
+                    data-resim="img/erkek22.jpg">
+                    Sepete Ekle
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- ALT KISIM / FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+<div id="resimModal" class="modal">
+ <span class="modal-kapat">&times;</span>
+ <img id="modalImg">
+</div>
+<!-- ÜRÜN DETAY MODAL (incele için, sadece açıklama gösterir) -->
+<div id="urunModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+    <span id="modalKapat" class="modal-kapat">&times;</span>
+
+    <img id="modalResim" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:12px;">
+    <h2 id="modalBaslik"></h2>
+    <p id="modalAciklama" style="color:#444; margin-top:8px;"></p>
+    <!-- fiyat göstermek istemezsen altındaki satırı sil; ister göster, ister gösterme -->
+    <p id="modalFiyat" class="modal-fiyat" style="margin-top:8px; color:#ff6a00;"></p>
+  </div>
+</div>
+
+</body>
+</html>

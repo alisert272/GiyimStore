@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sepetim - GiyimStore</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+<!-- ÜST BAR -->
+<header class="ust-bar">
+    <div class="logo">GiyimStore</div>
+
+    <div class="header-sag">
+        <a href="favoriler.html" class="link">Favorilerim💖</a>
+        <a href="index.html" class="link">Ana Sayfa</a>
+        <a href="sepet.html" class="sepet-icon">
+            🛒 Sepet <span id="sepetSayisi" class="sepet-sayi">0</span>
+        </a>
+    </div>
+</header>
+
+<!-- SEPET -->
+<section class="sepet-sayfa">
+    <h2>Sepetim</h2>
+
+    <div id="sepetBos" class="sepet-bos">
+        Sepetiniz şu an boş.
+    </div>
+
+    <div id="sepetListe" class="sepet-liste"></div>
+
+    <div class="sepet-alt">
+        <h3>Toplam: <span id="toplamFiyat">0 TL</span></h3>
+        <button id="satinAlBtn" class="btn-satin-al">Satın Al</button>
+
+
+
+    </div>
+</section>
+
+<script src="js/script.js"></script>
+ <!-- FOOTER -->
+    <footer class="alt-bar">
+        <p>İletişim: <a href="mailto:destek@giyimstore.com">destek@giyimstore.com</a></p>
+        <div class="sosyal">
+            <span>Instagram</span> | <span>Twitter</span> | <span>Facebook</span>
+        </div>
+        <p>© 2025 GiyimStore</p>
+    </footer>
+
+<!-- SATIN AL MODAL -->
+<div id="satinAlModal" class="urun-modal" style="display:none;">
+  <div class="urun-modal-icerik">
+
+    <span id="modalKapatSatin" class="modal-kapat">&times;</span>
+
+    <h2>Ödeme Bilgileri</h2>
+
+    <form id="satinAlForm">
+
+    <input type="text" id="adSoyad" placeholder="Ad Soyad">
+
+    <textarea id="adres" placeholder="Adres"></textarea>
+
+    <input type="text" id="kartNo" placeholder="Kart Numarası">
+
+    <!-- 🔥 BURASI ÇOK ÖNEMLİ -->
+    <div class="modal-row">
+        <input type="text" id="sonKullanma" placeholder="AA / YY">
+        <input type="text" id="cvv" placeholder="CVV">
+    </div>
+
+    <button type="submit">Ödemeyi Tamamla</button>
+</form>
+
+  </div>
+</div>
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
